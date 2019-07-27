@@ -8,7 +8,7 @@ useradd oracle
 echo "Get new user home directory"
 eval echo "~oracle" 
 
-ora_user_home = eval echo "~oracle"
+ora_user_home = $(getent passwd oracle|cut -d\: -f 6);
 
 mkdir -p $ora_user_home/installables
 cd $ora_user_home/installables
