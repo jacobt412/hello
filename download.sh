@@ -7,7 +7,7 @@ useradd oracle
 su - oracle
 echo "Get new user home directory"
 
-eval echo "~$different_user" 
+eval echo "~oracle" 
 
 pwd
 
