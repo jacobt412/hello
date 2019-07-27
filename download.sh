@@ -4,10 +4,16 @@ echo "Inside customscript.sh"
 echo "Adding a new user"
 useradd oracle
 
-su - oracle
+#su - oracle
 echo "Get new user home directory"
-
 eval echo "~oracle" 
+
+ora_user_home = eval echo "~oracle"
+
+mkdir -p $ora_user_home/installables
+cd $ora_user_home/installables
+
+echo "inside installable dir"
 
 pwd
 
