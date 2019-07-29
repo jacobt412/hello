@@ -21,7 +21,7 @@ echo "oracle home is '$ora_user_home'"
 mkdir -p $ora_user_home/installables
 cd $ora_user_home/installables
 
-echo "inside installable dir"
+echo "======inside installable dir======"
 
 pwd
 
