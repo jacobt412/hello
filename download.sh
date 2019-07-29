@@ -1,4 +1,5 @@
-!/bin/bash
+
+#!/bin/sh
 echo "Inside customscript.sh"
 
 get_ora_home() {
